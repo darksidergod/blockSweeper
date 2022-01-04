@@ -1,11 +1,12 @@
-* Install pip if it is not available:
+ * Install pip if it is not available:
+ ```sh
 $ which pip || curl https://bootstrap.pypa.io/get-pip.py | python
-
-* Install virtualenv if it is not available:
-* ```sh
+```
+ * Install virtualenv if it is not available:
+ ```sh
  which virtualenv || pip install --upgrade virtualenv
 ```
-* *If* the above command displays an error, you can try installing as root:
+* If the above command displays an error, you can try installing as root:
 ```sh
 $ sudo pip install virtualenv
 ```
@@ -30,18 +31,18 @@ $ pip install --upgrade pip setuptools
 $ pip install --upgrade web3
 ```
 
-*Enable the geth launchpad repository
+* Enable the geth launchpad repository
 ```sh
 $ sudo add-apt-repository -y ppa:ethereum/ethereum
 ```
 
-*Install go-ethereum
+* Install go-ethereum
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install ethereum
 ```
 
-*Run the client in fast-sync mode
+* Run the client in fast-sync mode
 ```sh
 $geth --syncmode "fast"
 ```
