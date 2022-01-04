@@ -1,31 +1,47 @@
-# Install pip if it is not available:
+* Install pip if it is not available:
 $ which pip || curl https://bootstrap.pypa.io/get-pip.py | python
 
-# Install virtualenv if it is not available:
-$ which virtualenv || pip install --upgrade virtualenv
-
-# *If* the above command displays an error, you can try installing as root:
+* Install virtualenv if it is not available:
+* ```sh
+ which virtualenv || pip install --upgrade virtualenv
+```
+* *If* the above command displays an error, you can try installing as root:
+```sh
 $ sudo pip install virtualenv
+```
 
-# Create a virtual environment:
+* Create a virtual environment:
+```sh
 $ virtualenv -p python3 ~/.venv-py3
+```
 
-# Activate your new virtual environment:
+* Activate your new virtual environment:
+```sh
 $ source ~/.venv-py3/bin/activate
+```
 
-# With virtualenv active, make sure you have the latest packaging tools
+* With virtualenv active, make sure you have the latest packaging tools
+```sh
 $ pip install --upgrade pip setuptools
+```
 
-# Now we can install web3.py...
+* Now we can install web3.py...
+```sh
 $ pip install --upgrade web3
+```
 
-
-#Enable the geth launchpad repository
+*Enable the geth launchpad repository
+```sh
 $ sudo add-apt-repository -y ppa:ethereum/ethereum
+```
 
-#Install go-ethereum
+*Install go-ethereum
+```sh
 $ sudo apt-get update
 $ sudo apt-get install ethereum
+```
 
-#Run the client in fast-sync mode
+*Run the client in fast-sync mode
+```sh
 $geth --syncmode "fast"
+```
