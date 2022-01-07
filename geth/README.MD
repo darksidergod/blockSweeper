@@ -46,3 +46,9 @@ $ sudo apt-get install ethereum
 ```sh
 $geth --syncmode "fast"
 ```
+
+* As you run the client there will be an opening of IPC endpoint, note that and use it to connect to a terminal using Javascript API as:
+```sh
+$geth attach /home/<username>/.ethereum/geth.ipc
+$txpool.content
+```
