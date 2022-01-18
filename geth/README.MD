@@ -1,3 +1,9 @@
+ * Installation of geth by building from source code
+ ```sh
+ go get -d github.com/ethereum/go-ethereum
+ go install github.com/ethereum/go-ethereum/cmd/geth
+ ```
+ 
  * Install pip if it is not available:
  ```sh
 $ which pip || curl https://bootstrap.pypa.io/get-pip.py | python
