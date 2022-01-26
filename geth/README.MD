@@ -48,10 +48,16 @@ $ sudo apt-get update
 $ sudo apt-get install ethereum
 ```
 
+* Run the client in light-sync mode
+```sh
+$geth --syncmode "light"
+```
+
 * Run the client in fast-sync mode
 ```sh
 $geth --syncmode "fast"
 ```
+
 
 * As you run the client there will be an opening of IPC endpoint, note that and use it to connect to a terminal using Javascript API as:
 ```sh
