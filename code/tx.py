@@ -28,7 +28,8 @@ while 1:
         for item in sorted_tx_dataMap:
             print(item)
 
-        time.sleep(2)
+        time.sleep(10) //updated sleep corresponding to time of a block.
+        
 
     
     
